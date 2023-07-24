@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Else </title>
+</head>
+
+
+<body>
+    <p id="baldisp"></p>
+    <p id=""></p>
+
+    <script>
+        var balance = 5000;
+        var pincode = 123;
+
+       let pincode2 = prompt('Enter your pin number');
+        if (pincode == pincode2) {
+            InputMsg = prompt('enter 1 for balance enquiry and 2 for withdraw')
+        }
+
+        if (InputMsg == 1) {
+            document.getElementById('baldisp').innerHTML = balance;
+            //document.write("your balance is".balance)
+        }
+
+        else if (InputMsg == 2) {
+
+            document.write("Your withdraw amount is")
+            let withdraw = prompt("withdraw amount")
+
+            if (withdraw <= balance) {
+                balance = balance - withdraw;
+
+                document.write("withdraw your balance".balance)
+            }
+
+            else {
+                document.write("Invalid Balance")
+            }
+        }
+    </script>
+</body>
+
+</html>

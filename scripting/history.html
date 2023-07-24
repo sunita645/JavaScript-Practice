@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>history object</title>
+</head>
+
+<body>
+    <p id="history_length"></p>
+    <button onclick="goBack()">Go back </button>
+    <button onclick="goForward()">Go forward </button>
+    <button onclick="goBackwithStep()">goBackwithStep </button>
+
+    <script type="text/javascript">
+
+        document.getElementById('history_length').innerHTML = "history length is " + history.length;
+
+        function goBack() {
+            window.history.back()
+        }
+
+        function goForward() {
+            window.history.forward()
+        }
+
+        function goBackwithStep() {
+            window.history.go()
+        }
+
+    </script>
+</body>
+
+</html>

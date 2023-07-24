@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2> Navigator Object</h2>
+
+    <p id="java_enabled"></p>
+    <p id="language"></p>
+    <p id="platform"></p>
+    <p id="app_version"></p>
+    <p id="product"></p>
+    <p id="app code_name"></p>
+
+    <script type="text/javascript">
+        document.getElementById("java_enabled").innerHTML = "java enabled is " + navigator.javaEnabled(); //method
+
+        document.getElementById("language").innerHTML = "navigator.language is " + navigator.language;
+
+        document.getElementById("platform").innerHTML = "navigator.platform is " + navigator.platform;
+
+        document.getElementById("app_version").innerHTML = "app version is " + navigator.appVersion;
+
+        document.getElementById("product").innerHTML = "navigator.product is " + navigator.product;
+
+        document.getElementById("app code_name").innerHTML = "navigator.appcodeName is " + navigator.appCodeName;
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for each loop example</title>
+</head>
+
+<p id="demo"></p>
+
+<body>
+    <script type="text/javascript">
+        var sub = ["nm","script","os"];
+        let text = "";
+        sub.forEach(subject)
+
+        document.getElementById("demo").innerHTML = text;
+        console.log(text);
+
+        function subject(values){
+            text += values + "<br>";
+        }
+        
+    </script>
+    
+</body>
+</html>

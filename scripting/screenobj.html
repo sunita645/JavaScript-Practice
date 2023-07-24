@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <p id="screen width"></p>
+    <p id="screen height"></p>
+    <p id="avail width"></p>
+    <p id="avail height"></p>
+    <p id="colorDepth"></p>
+    <p id="pixelDepth"></p>
+
+    <script>
+
+        document.getElementById("screen width").innerHTML =
+            "Screen width is " + screen.width;
+
+            document.getElementById("screen height").innerHTML =
+            "Screen height is " + screen.height;
+
+            document.getElementById("avail width").innerHTML = // including taskbar
+            "Screen avail width is " + screen.availWidth;
+
+            document.getElementById("avail height").innerHTML =
+            "Screen avail height is " + screen.availHeight;
+
+            document.getElementById("colorDepth").innerHTML =
+            "Screen color depth is " + screen.colorDepth;
+
+            document.getElementById("pixelDepth").innerHTML =
+            "Screen pixel depth is " + screen.pixelDepth;
+
+
+    </script>
+
+</body>
+
+</html>

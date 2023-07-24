@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Date object</title>
+
+</head>
+<body>
+    <h1>Date Object</h1>
+    <div id ="clock"></div>
+    <script type="text/javascript">
+        function clock(){
+
+            var date = new date();
+            document.getElementById('clock').innerHTML = date;
+            setTimeout(clock,1000);
+        }
+        clock();
+    </script>
+</body>
+</html>

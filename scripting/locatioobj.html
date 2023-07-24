@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>JavaScript</h2>
+
+    <h3>The window.location object</h3>
+
+    <p id="href"></p>
+    <p id="hostname"></p>
+    <button onclick="window.location.replace('https://www.google.com/')">Replace</button>
+    <button onclick="window.location.replace('https://www.youtube.com/')">Replace</button>
+    <script>
+        document.getElementById("href").innerHTML =
+            "The full URL of this page is:<br>" + window.location.href;
+
+        document.getElementById("hostname").innerHTML =
+            "The full URL of this page is:<br>" + window.location.hostname;
+
+    </script>
+</body>
+
+</html>

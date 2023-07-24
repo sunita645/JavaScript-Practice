@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>get elementby name</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+function checkfunction(){
+    var frt = document.getElementsByName("fruit")
+    if(frt[1].checked)
+    {
+        alert("it is a fruit");
+    }
+    else
+    {
+        alert("not a fruit");
+    }
+}
+    </script>
+    Mango <input type = "radio" name="fruit">
+    <br>
+    Apple<input type = "radio" name="fruit">
+    <br>
+     <button onclick="checkfruit()">check</button>
+</body>
+</html>
